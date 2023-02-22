@@ -5,24 +5,26 @@
  *
  * Return: Always 0 (Success)
  */
+int main() {
+    int current = 1;
+    int previous = 1;
+    int next;
+    int count = 2;
 
-int main(void)
-{
-	int i;
-	unsigned long int fibonacci[98];
+    printf("%d, %d, ", previous, current);
 
-	fibonacci[0] = 1;
-	fibonacci[1] = 2;
-	printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
+    while (count < 98) {
+        next = current + previous;
+        previous = current;
+        current = next;
+        printf("%d, ", current);
+        count++;
+    }
 
-	for (i = 2; i < 98; i++)
-	{
-		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
-		if (i == 97)
-			printf("%ld\n", fibonacci[i]);
-		else
-			printf("%ld, ", fibonacci[i]);
-	}
+    next = current + previous;
+    previous = current;
+    current = next;
+    printf("%d\n", current);
 
-	return (0);
+    return 0;
 }
