@@ -1,4 +1,5 @@
 #include "main.h"
+void print_integer(int m);
 
 /**
  * print_numbers - print integers using _putchar
