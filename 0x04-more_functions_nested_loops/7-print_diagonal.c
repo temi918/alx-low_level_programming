@@ -5,21 +5,20 @@
  * @n: A counter integer
  * Return: 0
  */
-
 void print_diagonal(int n)
 {
-	if (n <= 0)
+	int i = 0, j;
+
+	if (n > 0)
 	{
-		putchar('\n');
-		return;
-	}
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < i; j++)
+		for (; i < n; i++)
 		{
-			putchar(' ');
+			for (j = 0; j < i; j++)
+				_putchar(' ');
+		_putchar(92);
+		_putchar('\n');
 		}
-		putchar('\\');
-		putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
