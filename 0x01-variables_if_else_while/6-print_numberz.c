@@ -1,18 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point
- *
+ * Description - prints 0-9 using putchar
  * Return: 0
  */
+
 int main(void)
 {
-	int d;
+	char num;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
+	for (num = '0'; num <= '9'; num++)
+		putchar(num);
 	putchar('\n');
 
 	return (0);
