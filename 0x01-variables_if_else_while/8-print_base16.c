@@ -1,19 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point
- *
- * Return: 0
+ * Description - A program that prints all nos of base 16 in lower case
+ * Return: 0 (Always success)
  */
+
 int main(void)
 {
-	int d;
+	int num;
 	char low;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
+	for (num = '0'; num <= '9'; num++)
+		putchar(num);
 	for (low = 'a'; low <= 'f'; low++)
 		putchar(low);
 	putchar('\n');
