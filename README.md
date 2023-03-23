@@ -1,1 +1,1 @@
-C_programming
+C an amazing language
