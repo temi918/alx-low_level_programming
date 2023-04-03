@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #ifndef _LISTS_H_
 #define _LISTS_H_
