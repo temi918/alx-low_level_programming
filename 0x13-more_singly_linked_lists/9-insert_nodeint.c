@@ -3,10 +3,10 @@
 /**
  * insert_nodeint_at_index -  a function that inserts a new
  * node at a given position
- * 
+ *
  * @head: The head of the list.
  * @idx: The index of the list where the new node should be added
- * 
+ *
  * @n: integer element.
  *
  * Return: Returns the address of the new node, or NULL if it
