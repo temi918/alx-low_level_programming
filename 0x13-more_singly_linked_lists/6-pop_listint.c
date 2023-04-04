@@ -12,7 +12,7 @@
 int pop_listint(listint_t **hd)
 {
 	int head_node;
-	listint_t *h;
+	listint_t *t;
 	listint_t *rr;
 
 	if (*hd == NULL)
@@ -22,11 +22,11 @@ int pop_listint(listint_t **hd)
 
 	head_node = rr->n;
 
-	h = rr->next;
+	t = rr->next;
 
 	free(rr);
 
-	*hd = h;
+	*hd = t;
 
 	return (head_node);
 }
