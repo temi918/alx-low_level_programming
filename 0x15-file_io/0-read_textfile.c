@@ -6,7 +6,8 @@
 #include <unistd.h>
 
 /**
- * read_textfile - A function that reads a text file & prints it to POSIX STANDARD OUTPUT
+ * read_textfile - A function that reads a text file &
+ * prints it to POSIX STANDARD OUTPUT
  *
  * @filename: Filename to open text
  *
