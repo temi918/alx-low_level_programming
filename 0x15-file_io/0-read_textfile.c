@@ -1,10 +1,8 @@
-#include "main.h"
+#include <sys/stat.h>
+#include <stdlib.h>
+#include <sys/uio.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <unistd.h>
 
-/**
- *
- * binary_to_uint - Function that converts binary unsigned integer
- * @c: Pointer to binary string
- * Return: converted number
- *
- */
 
