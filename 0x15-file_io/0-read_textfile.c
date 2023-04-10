@@ -18,7 +18,7 @@
 
 ssize_t read_textfile(const char *filename, size_t numOfLetters)
 {
-	int fdo, fdr, fdw;
+
 	char *temp;
 	int nut;
 	int vut, jut;
@@ -37,18 +37,18 @@ ssize_t read_textfile(const char *filename, size_t numOfLetters)
 		return (0);
 	}
 
-	fdr = read(nut, temp, numOfLetters);
-	if (fdr < 0)
+	vut = read(nut, temp, numOfLetters);
+	if (vut < 0)
 	{
 		free(temp);
 		return (0);
 	}
 
-	fdw = write(STDOUT_FILENO, temp, fdr);
+	jut = write(STDOUT_FILENO, temp, vut);
 	free(temp);
 	close(nut);
 
-	if (fdw < 0)
+	if (jut < 0)
 		return (0);
-	return ((ssize_t)fdw);
+	return ((ssize_t)jut);
 }
