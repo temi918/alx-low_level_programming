@@ -82,3 +82,13 @@ int main(int argc, char *argv[])
 		exit(100);
 	return (0);
 }
+
+int safe_close(int descr)
+{
+	int err_Msg;
+
+	err_Msg = close(descr);
+	if (err_Msg < 0)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", descr);
+	return (err_Msg);
+}
