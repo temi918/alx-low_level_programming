@@ -10,20 +10,27 @@
  *
  */
 
-unsigned int binary_to_uint(const char *b)
+unsigned int binary_to_uint(const char *c)
 {
-	int ji;
-	unsigned int _val = 0;
+	unsigned int b = 1;
+	int result = 0;
+	int l = 0;
 
-	if (!b)
+	if (c == NULL)
 		return (0);
 
-	for (ji = 0; b[ji]; ji++)
-	{
-		if (b[ji] < '0' || b[ji] > '1')
-			return (0);
-		_val = 2 * val + (b[ji] - '0');
-	}
+	while (c[l])
+		l++;
 
-	return (_val);
+	while (l)
+	{
+		if (c[l - 1] != '0' && c[l - 1] != '1')
+			return (0);
+
+		if (c[l - 1] == '1')
+			result += b;
+		b *= 2;
+		l--;
+	}
+	return (result);
 }
