@@ -3,7 +3,7 @@
 /**
  * print_binary - A function that prints the binary representation of a number.
  *
- * @num: the nuumber to be printed in binary.
+ * @number: the nuumber to be printed in binary.
  *
  */
 
